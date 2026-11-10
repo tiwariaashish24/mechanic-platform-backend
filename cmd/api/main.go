@@ -11,10 +11,10 @@ import (
 func main() {
 	router := mux.NewRouter()
 
-	// Health check endpoint
+	
 	router.HandleFunc("/health", HealthCheck).Methods("GET")
 
-	// API routes
+	
 	routers.SetRouter(router)
 
 	log.Println("Server running on http://localhost:8080")
